@@ -3,14 +3,21 @@ package com.spring_study.service;
 import com.spring_study.domain.Member;
 import com.spring_study.repository.MemberRepository;
 import com.spring_study.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+
+//@Service
 public class MemberService {
 
     private final MemberRepository memberRepository;
 
+    //@Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
