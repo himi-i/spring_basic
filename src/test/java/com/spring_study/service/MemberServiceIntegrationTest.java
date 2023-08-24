@@ -25,7 +25,7 @@ class MemberServiceIntegrationTest {
 
 
     @Test
-    public void 회원가입() throws Exception{
+    void 회원가입() {
         //given
         Member member = new Member();
         member.setName("hello");
